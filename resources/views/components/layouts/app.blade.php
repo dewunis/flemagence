@@ -27,7 +27,7 @@
         <x-main>
             {{ $slot }}
         </x-main>
-        <x-footer />
+        {{-- <x-footer /> --}}
     </div>
 </body>
 
