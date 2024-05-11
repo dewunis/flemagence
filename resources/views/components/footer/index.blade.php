@@ -12,7 +12,7 @@
                         <input type="text"
                             class="w-full xl:w-[calc(100%-30%)] bg-gray-50 pl-2 border-b-[2px] outline-none border-b-slate-300">
                     </div>
-                    <button class="bg-yellow-200 px-6 rounded py-2 mt-8 uppercase text-sm font-medium">
+                    <button class="bg-yellow-300 px-6 rounded py-2 mt-8 uppercase text-sm font-medium">
                         sign up now!
                     </button>
                 </div>
