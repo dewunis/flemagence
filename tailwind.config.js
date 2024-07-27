@@ -12,11 +12,18 @@ export default {
                 padding: {
                     DEFAULT: "1rem",
                     sm: "2rem",
-                    lg: "4rem",
-                    xl: "5rem",
-                    "2xl": "6rem",
+                    lg: "2rem",
+                    xl: "2rem",
+                    "2xl": "4rem",
                 },
             },
+            fontFamily: {
+                outfit: ["Outfit","sans-serif"],
+            },
+
+            colors: {
+                yellow1 : "#EAF765",
+            }
         },
     },
     plugins: [],

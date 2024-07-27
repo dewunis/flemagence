@@ -1,4 +1,4 @@
-<footer class="bg-gray-50 pt-14 pb-4">
+<footer class="bg-gray-50 pt-8 pb-4">
     <div class="container">
         <div class="grid grid-cols-1 xl:grid-cols-2 items-center justify-center">
             <div class="w-full">
@@ -12,13 +12,13 @@
                         <input type="text"
                             class="w-full xl:w-[calc(100%-30%)] bg-gray-50 pl-2 border-b-[2px] outline-none border-b-slate-300">
                     </div>
-                    <button class="bg-yellow-300 px-6 rounded py-2 mt-8 uppercase text-sm font-medium">
+                    <button class="bg-yellow1 px-6 rounded py-2 mt-8 uppercase text-sm font-medium">
                         sign up now!
                     </button>
                 </div>
             </div>
 
-            <div class="w-full flex-col xl:flex-row  flex xl:justify-end mt-8 xl:-mt-14">
+            <div class="w-full flex-col xl:flex-row  flex xl:justify-end mt-8 xl:-mt-12">
                 <div class="w-full xl:max-w-[40%]">
                     <h4 class="text-5xl pb-4  font-bold">LDN</h4>
                     <p>
@@ -28,8 +28,8 @@
                         London EC2A 4HT
                     </p>
                     <p class="pt-4">
-                        hi@makeagency.co.uk
-                        020 3567 0860
+                        <span class=block>hi@flemagence.co</span>
+                        90 00 00 00
                     </p>
                 </div>
                 <div class="flex xl:flex-col  gap-x-6  xl:gap-y-4 xl:ml-16 mt-6 xl:mt-0">

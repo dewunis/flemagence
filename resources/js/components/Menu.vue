@@ -3,7 +3,7 @@
         <div class="mr-12 hidden xl:flex">
             <ul class="flex items-center gap-x-6">
                 <li class="capitalize hover:text-yellow-200 transition-colors text-lg" v-for="link in links">
-                    <a href="">{{ link.name }}</a>
+                    <a :href="link.url">{{ link.name }}</a>
                 </li>
             </ul>
         </div>
