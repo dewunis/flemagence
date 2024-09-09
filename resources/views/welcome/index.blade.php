@@ -1,51 +1,30 @@
 <x-layouts.app>
-    <section class="-mt-20 relative h-[calc(100vh-140px)] w-full">
+    <section class="-mt-20 relative h-screen w-full">
         <div
             class="after:-z-0 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-black  after:opacity-60">
         </div>
 
-        <video autoplay="" muted="" playsinline="" loop="" class="h-[calc(100vh-140px)] w-full object-cover">
+        <video autoplay="" muted="" playsinline="" loop="" class="h-[calc(100vh)] w-full object-cover">
             <source src="https://makeagency.co.uk/wp-content/uploads/2024/01/MAKE-2024-HERO-LR.mov" type="video/mp4">
         </video>
 
-        <div style="position: absolute;z-index: 9999;color: #fff;bottom: 96px;">
-            <span class="play-showreel"
-                style="user-select: none;transform: rotate(-90deg);position: relative;display: inline-block;transform-origin: top left;font-size: 16px;padding: 12px;cursor: pointer;"><svg
-                    style="position: absolute;width: 22px;height: auto;left: -22px; transform: rotate(90deg);"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 22" class="">
-                    <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M17.588 10.292 2.296 1.124a.863.863 0 0 0-1.179.287.821.821 0 0 0-.117.421v18.335c0 .149.04.294.117.422a.843.843 0 0 0 .32.306.864.864 0 0 0 .86-.02l15.29-9.167a.831.831 0 0 0 .303-.3.81.81 0 0 0-.302-1.116Z">
-                    </path>
-                </svg>
-                <span class="showreel-text text-lg font-extrabold">PLAY SHOWREEL</span>
-            </span>
-        </div>
-
-
-        <div class="absolute top-36 z-10 px-36">
-            <h1 class="text-white text-7xl font-extrabold" style="word-spacing: 30px">
+        <div class="absolute w-full  left-1/2 -translate-x-1/2 md:-translate-x-0 xl:-translate-x-0 md:left-0 xl:left-0 top-44 xl:top-48 z-10 xl:px-20 md:px-20">
+            <h1 class="text-white text-4xl text-center md:text-start xl:text-start xl:text-7xl md:text-6xl font-[900] font-orbitron" style="word-spacing: px">
                 DIGITAL AGENCY <br> WITH A PASSION FOR <br> MARKETING
             </h1>
 
-            <div class="flex items-center gap-x-4 mt-8">
-                <a href=""
-                    class="hover:bg-black hover:transition-colors transition-colors duration-500 hidden xl:flex hover:duration-500 hover:text-white  uppercase font-bold bg-yellow1 text-black py-[6px] px-4 rounded-full">
-                    Marketing <span class="px-2">/</span> SOCIAL
-                </a>
-
-                <a href=""
-                    class="hover:bg-black hover:transition-colors transition-colors duration-500 hidden xl:flex hover:duration-500 hover:text-white  uppercase font-bold bg-white text-black py-[6px] px-4 rounded-full">
-                    Technology <span class="px-2">/</span> WEB
-                </a>
+            <div class="flex justify-center md:justify-start xl:justify-start items-center gap-x-4 mt-12">
+              <v-button type="primary" text="About Us"></v-button>
+              <v-button type="secondary" text="Our Services"></v-button>
             </div>
         </div>
     </section>
 
-    <section class="text-white  py-20">
+    <section class="text-white py-20">
         <div class="container">
-            <div class="grid grid-cols-2 items-start">
-                <div class="">
-                    <span class="block text-5xl font-bold">
+            <div class="grid grid-cols-1 md:mt-0 xl:mt-0 md:grid-cols-2 xl:grid-cols-2 md:items-start justify-center items-center">
+                <div>
+                    <span class="block text-4xl md:text-5xl xl:text-5xl font-bold">
                         <span class="block mb-1">
                             Creatively led. <br>
                         </span>
@@ -65,14 +44,14 @@
                         areas: web design & build, social media & digital marketing, and creative content.
                     </p>
 
-                    <div>
+                    <div class="mt-4">
                         <a href="">
                             <v-text-arrow text="About flem" />
                         </a>
                     </div>
                 </div>
 
-                <div class="flex gap-y-4 flex-col items-end pr-20">
+                <div class="flex mt-20 md:mt-0 xl:mt-0 gap-y-4 flex-col md:items-end xl:items-end items-center md:pr-20 xl:pr-20">
                     <div class="flex flex-col max-w-[150px]">
                         <div class="flex flex-col items-center justify-center text-center">
                             <img class="w-[100px] h-[100px] object-contain"
@@ -102,14 +81,14 @@
         </div>
     </section>
 
-    <section class="text-white pb-36 pt-6">
+    <section class="text-white pb-36 pt-6 px-2 md:px-10 xl:px-10">
         <div class="container">
-            <div class="grid grid-cols-2 gap-x-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-y-8 gap-x-10">
                 <div class="relative">
                     <div
                         class="after:-z-0 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-black  after:opacity-50">
                     </div>
-                    <video class="h-[760px] w-full object-cover" autoplay muted loop>
+                    <video class="h-[400px] w-full object-cover" autoplay muted loop>
                         <source src="https://makeagency.co.uk/wp-content/uploads/2023/02/Asana.mp4" type="video/mp4">
                     </video>
                     <div class="flex absolute z-10 items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -124,7 +103,7 @@
                     <div
                         class="after:-z-0 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-black  after:opacity-50">
                     </div>
-                    <video class="h-[760px] w-full object-cover" autoplay muted loop>
+                    <video class="h-[400px] w-full object-cover" autoplay muted loop>
                         <source src="https://makeagency.co.uk/wp-content/uploads/2022/12/MAKE-SOLDO.mp4"
                             type="video/mp4">
                     </video>
@@ -140,10 +119,9 @@
     </section>
 
     {{-- latest work --}}
-
-    <section class="text-white">
+    <section class="text-white py-20">
         <div class="container">
-            <h1 class="mb-8 uppercase text-2xl font-extrabold tracking-widest">Latest articles</h1>
+            <h1 class="mb-8 uppercase text-2xl md:text-3xl xl:text-3xl font-extrabold tracking-widest">Our latest work</h1>
             <p class="mb-8">
                 Pioneering change across technology, marketing and social.
             </p>
@@ -164,13 +142,13 @@
     {{-- end latest work --}}
 
     {{-- blog article list --}}
-    <section class="text-white py-8">
+    <section class="text-white py-20">
         <div class="w-full flex items-center justify-center">
             <div class="container">
-                <h1 class="mb-8 uppercase text-2xl font-extrabold tracking-widest">Latest articles</h1>
-                <div class="grid grid-cols-3 gap-x-10">
+                <h1 class="mb-8 uppercase text-2xl md:text-3xl xl:text-3xl font-extrabold tracking-widest">Latest articles</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gapy-y-20 px-2 md:px-0 lg:px-0">
 
-                    <div>
+                    <div class="mb-8 md:mb-0 xl:mb-0">
                         <div>
                             <img class="rounded-lg  object-cover"
                                 src="https://makeagency.co.uk/wp-content/uploads/2024/04/MAKE-agency-Sheeran-Loopers-590x357.jpg"
@@ -186,7 +164,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="mb-8 md:mb-0 xl:mb-0">
                         <div>
                             <img class="rounded-lg object-cover"
                                 src="https://makeagency.co.uk/wp-content/uploads/2024/04/Boxpark_Image04_V01-590x357.png"
@@ -201,7 +179,7 @@
                         </p>
                     </div>
 
-                    <div>
+                    <div class="mb-8 md:mb-0 xl:mb-0">
                         <div>
                             <img class="rounded-lg object-cover"
                                 src="https://makeagency.co.uk/wp-content/uploads/2024/01/MAKE_Agency_Reel_Poster24-590x357.jpg"
@@ -232,8 +210,8 @@
     <section class="text-white py-20 px-4">
         <div class="w-full flex items-center justify-center">
             <div class="flex flex-col text-center max-w-lg">
-                <span class="block text-5xl mb-1 font-extrabold">READY</span>
-                <span class="block text-7xl font-extrabold">LET’S GO!</span>
+                <span class="block text-4xl md:text-5xl xl:text-5xl mb-1 font-extrabold">READY</span>
+                <span class="block text-6xl  md:text-7xl xl:text-7xl font-extrabold">LET’S GO!</span>
                 <p class="py-8 text-lg">
                     Let’s discuss your goals and challenges over a quick email or call.
                     Enter your details and we’ll be in touch!

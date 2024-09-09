@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute left-0 top-16 bg-black h-full w-full z-[60] opacity-80">
+    <div class="fixed left-0 top-16 bg-black h-screen w-full z-[100] opacity-90">
         <div class="w-full">
             <ul class="flex items-start pl-4 gap-x-6 text-white flex-col pt-4">
                 <li class="capitalize hover:text-yellow-200 transition-colors text-lg mb-3" v-for="link in links">

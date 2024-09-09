@@ -2,9 +2,21 @@
     <div>
         <swiper-container :allow-touch-move="true" :slides-per-view="5" navigation="true" :space-between="spaceBetween"
             :breakpoints="{
-                768: {
-                    slidesPerView: 4,
+                 1024: {
+                slidesPerView: 4,
                 },
+                768: {
+                slidesPerView: 4,
+                },
+                640: {
+                slidesPerView: 3,
+                },
+                520: {
+                slidesPerView: 2,
+                },
+                320: {
+                slidesPerView: 1,
+                }
             }" ref="latestWorkCarousel" init="false">
 
             <swiper-slide v-for="item in items">
@@ -16,9 +28,17 @@
 
 <script setup lang="ts">
 import { register } from 'swiper/element/bundle';
-import { ref, onMounted } from 'vue';
-
+import { ref, onMounted, computed } from 'vue';
 import LatestWorkCarouselItem from '@/components/LatestWorkCarouselItem.vue';
+
+import { useBreakpoints } from '@vueuse/core'
+
+const breakpoints = useBreakpoints({
+  mobile: 0, // optional
+  tablet: 640,
+  laptop: 1024,
+  desktop: 1280,
+})
 
 defineProps<{
     items?: Array<{ [key: string]: string }>
@@ -28,7 +48,10 @@ register();
 
 const latestWorkCarousel = ref<null | { initialize: () => void }>(null);
 
-const spaceBetween = 10;
+const spaceBetween = computed(() => {
+    if(breakpoints.tablet.value >=  640) return 100;
+    else return 10;
+});
 
 const handleInit = (swiper: any) => {
     const prevButton = swiper.el.querySelector('.swiper-button-prev') as HTMLElement;
@@ -64,8 +87,8 @@ const params = {
     navigation: true,
 
     centeredSlidesBounds: true,
-    slidesOffsetBefore: 70,
-    slidesOffsetAfter: 500,
+    slidesOffsetBefore: 30,
+    slidesOffsetAfter: 0,
     injectStyles: [
         `
     .swiper-button-next,
@@ -96,6 +119,8 @@ onMounted(() => {
         Object.assign(latestWorkCarousel.value, params);
         latestWorkCarousel.value.initialize();
     }
+
+    console.log(spaceBetween.value)
 });
 
 </script>

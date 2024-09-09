@@ -18,7 +18,9 @@ export default {
                 },
             },
             fontFamily: {
+                orbitron: ["Orbitron","sans-serif"],
                 outfit: ["Outfit","sans-serif"],
+                poppins: ["Poppins","sans-serif"],
             },
 
             colors: {

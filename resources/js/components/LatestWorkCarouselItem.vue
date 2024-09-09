@@ -1,6 +1,6 @@
 <template>
     <a href="">
-        <div class="h-[400px]  w-[320px] overflow-hidden relative" @mouseleave="isHighOpacityBackground = false"
+        <div class="h-[400px]  w-[310px] overflow-hidden relative" @mouseleave="isHighOpacityBackground = false"
             @mouseover="isHighOpacityBackground = true">
             <div v-if="!isHighOpacityBackground"
                 class="duration-1000 transition-colors after:transition-colors after:duration-500 after:rounded-lg after:-z-0 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:bg-black  after:opacity-30">
