@@ -12,7 +12,7 @@ import ArrowLeft from "@/components/ui/icon/ArrowLeft.vue";
 import { defineProps } from "vue";
 
 const props = defineProps<{
-    text: string
+    text?: string
     spacing?: number
 }>();
 </script>

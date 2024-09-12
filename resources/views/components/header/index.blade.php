@@ -8,7 +8,7 @@
                 <div>
                     <v-menu />
                 </div>
-                <a href="/contact" class="hover:bg-opacity-10 transition-colors duration-500 hidden xl:flex hover:transition-opacity hover:duration-500 hover:text-white  uppercase font-extrabold  bg-white text-black py-[3px] px-4 rounded-full">
+                <a href="/contact" class="hover:bg-opacity-10 transition-colors duration-500 hidden xl:flex hover:transition-opacity hover:duration-500 hover:text-white  uppercase font-extrabold  bg-white text-black py-[6px] px-4 rounded-full">
                     Contact
                 </a>
             </div>
