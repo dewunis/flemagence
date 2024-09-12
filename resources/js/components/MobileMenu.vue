@@ -3,7 +3,7 @@
         <div class="w-full">
             <ul :class="{'text-white' : !variant, 'text-black' :  variant}" class="flex items-start pl-4 gap-x-6 flex-col pt-4">
                 <li :class="{'hover:text-yellow-200' : !variant, 'hover:text-gray-200' : variant}" class="capitalize  transition-colors text-lg mb-3" v-for="link in links">
-                    <a href="">{{ link.name }}</a>
+                    <a :href="link.url">{{ link.name }}</a>
                 </li>
             </ul>
             <div class="px-4 mt-1">
